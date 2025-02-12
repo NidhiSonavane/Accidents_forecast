@@ -68,3 +68,35 @@ To run this project, you need the following:
     ```bash
    pip install -r requirements.txt
     ```
+
+## Deployment
+
+This project is deployed to cloud platform **Heroku**. Below are the basic steps for deploying it to **Heroku**:
+
+### Deploying to Heroku
+
+1. **Create a `Procfile`**  
+   In the root of your project, create a file named `Procfile` and add the following line:
+   ```
+   web: python app.py
+   ```
+2. **Login to Heroku**
+   ```
+   heroku login
+   ```
+3. **Create a new Heroku application**
+    ```
+   heroku create accidents-forecast
+
+   ```
+4. **Add the Heroku remote repository**
+   ```
+     git remote add heroku https://github.com/NidhiSonavane/Accidents_forecast.git
+   ```
+5. **Deploy the application**
+  ```
+  git add .
+  git commit -m "Deploying to Heroku"
+  git push heroku master
+  
+  ```
