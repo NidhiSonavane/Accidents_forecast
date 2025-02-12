@@ -21,14 +21,14 @@ This is the home endpoint, and it simply returns a welcome message.
 This endpoint accepts a `POST` request with JSON data containing the year and month. It returns the forecasted number of alcohol-related accidents for that specific period.
 
 #### Example Request Body:
-```json
+```
 {
   "year": 2020,
   "month": 10
 }
 ```
 #### Example Response:
-```json
+```
 {
   "prediction": 41.10481544269847
 }
